@@ -52,21 +52,30 @@ table {
 * {
     box-sizing: border-box;
 }
-@universalWidth: 100%;
+@universalWidth: 60vw;
+@universalHeight: 90vh;
 @center: 0 auto;
 @test: red;
-@paddingUpperContainer: 1%;
-
+@paddingContainer: 1%;
+@middleContainerHeadText: 1.55rem;
+@middleContainerMargin: 2%;
+.widthWorkHistory {
+	width: 44%;
+	height: 44%;
+	border: solid purple 2px; //Testing reasons (visualize)
+	background: purple;
+}
 html {
 	height: 100%;
-	background-color: darkgrey;
+	background-color: #221609;
 	
 }
 body {
 	background-color: beige;
-	height: 90vh;
-	width: 60vw;
+	height: @universalHeight;
+	width: @universalWidth;
 	margin: @center;
+	
 }
 .navContainer {
 	text-align: center;
@@ -77,11 +86,11 @@ body {
 	}
 }
 .upperContainer {
-	height: 100%;
+	height: @universalHeight;
 	width: @universalWidth;
 	margin: @center;
-	background-color: @test;
-	border: solid 5px;
+	background-color: #4A2908;
+	// border: solid 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -95,9 +104,50 @@ body {
 	button {
 		width: 12rem;
 		height: 2rem;
-		margin-top: 5%;	
+		margin-top: 5%;
+		background-color: #593A1A;
+		border: none;
 	}
 	.item {
-		padding: @paddingUpperContainer;
+		padding: @paddingContainer;
+	}
+}
+.middleContainer{
+	width: @universalWidth;
+	background-color: #593A1A;
+	display: flex;
+	justify-content: space-between;
+	
+	.item {
+		min-width: 50%;
+		max-width: 50%;
+		// border: solid 2px;
+		padding: @paddingContainer;
+		
+		.itemOfItem {
+			padding: @paddingContainer;
+		}
+	}
+	p {
+		word-wrap: break-word;
+	}
+	h4 {
+	font-size: @middleContainerHeadText;
+	}
+	.listOfThings {
+		padding: @paddingContainer;
+		
+		li{
+			padding: @paddingContainer;
+		}
+	}
+}
+.lowerContainer{
+	width: @universalWidth;
+	height: @universalHeight;
+	border: solid red;
+
+	.workHistoryContainer .historyItem {
+		.widthWorkHistory();
 	}
 }

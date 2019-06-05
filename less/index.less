@@ -52,8 +52,52 @@ table {
 * {
     box-sizing: border-box;
 }
+@universalWidth: 100%;
+@center: 0 auto;
+@test: red;
+@paddingUpperContainer: 1%;
 
-html, body {
-    height: 100%;
+html {
+	height: 100%;
+	background-color: darkgrey;
+	
 }
-
+body {
+	background-color: beige;
+	height: 90vh;
+	width: 60vw;
+	margin: @center;
+}
+.navContainer {
+	text-align: center;
+	a { //Anchors in Navigation Bar//
+		padding: 3rem;
+		text-decoration: none;
+		color: black;
+	}
+}
+.upperContainer {
+	height: 100%;
+	width: @universalWidth;
+	margin: @center;
+	background-color: @test;
+	border: solid 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	img {
+		border-radius: 33%;
+		margin: 5% 0% 2% 2%;
+	}
+	.nameTag {
+		font-size: 3.1rem;
+	}
+	button {
+		width: 12rem;
+		height: 2rem;
+		margin-top: 5%;	
+	}
+	.item {
+		padding: @paddingUpperContainer;
+	}
+}

@@ -118,7 +118,7 @@ body {
 		width: 12rem;
 		height: 2rem;
 		margin-top: 5%;
-		background-color: #593A1A;
+		background-color: #715936;
 		border: none;
 	}
 	.item {
@@ -177,20 +177,22 @@ body {
 		flex-wrap: wrap;
 		justify-content: space-around;
 		
-		.historyItem{
+		.historyItem {
 			.widthWorkHistory();
 			// .marginWorkHistory();
-			
+			@media (max-width: 500px) {
+				width: 500px;
+				// height: @universalHeight + vh;
+				display:flex;
+				flex-direction: column;
+				margin: .5rem;
+			}	
 			p {
 				word-wrap: break-word;
 			}
-		}
+		
 		
 	}
-	@media (max-width: 500px) {
-		width: 500px;
-		// height: @universalHeight + vh;
-		display:flex;
-		flex-direction: column;
+	
 	}
 }

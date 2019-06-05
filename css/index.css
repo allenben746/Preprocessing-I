@@ -183,7 +183,7 @@ body {
   width: 12rem;
   height: 2rem;
   margin-top: 5%;
-  background-color: #593A1A;
+  background-color: #715936;
   border: none;
 }
 .upperContainer .item {
@@ -242,13 +242,14 @@ body {
   width: 44%;
   background: 3C2A0C;
 }
-.lowerContainer .workHistoryContainer .historyItem p {
-  word-wrap: break-word;
-}
 @media (max-width: 500px) {
-  .lowerContainer {
+  .lowerContainer .workHistoryContainer .historyItem {
     width: 500px;
     display: flex;
     flex-direction: column;
+    margin: 0.5rem;
   }
+}
+.lowerContainer .workHistoryContainer .historyItem p {
+  word-wrap: break-word;
 }

@@ -2,10 +2,12 @@
 
 <html lang="en">
 <head>
+    <!-- <link  rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap"> -->
+
   <meta charset="utf-8">
 
   <title>My Resume</title>
-
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +16,60 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="navContainer">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="https://allenben746.github.io/">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="upperContainer">
+    <div class="item profilePicture">
+      <img src="img\profilePicture.jpg" alt="Profile Picture">
+    </div>
+    <h1 class="item nameTag">Benjamin Allen - Wed Dev</h1>
+    <h3 class="item">Lambda School</h3>
+    <p class="item shortMessage">Benjamin Allen is an up and coming Web Developer. Currently a student at Lambda School, he is seeking a workplace that pushes him to grow and challenge himself everyday.</p>
+    <a href="index.html" class="item collabButton"><button class="item collabButton">Lets Collaborate</button></a>
+  </div><!-- upperContainer -->
+  <div class="middleContainer">
+    <div class="item"> <!--Paragraph-->
+      <h4 class="itemOfItem">About Ben</h4>
+      <p class="itemOfItem">Ben is a native of Houston, Texas. He has three years experience in the retail industry, which can offer a unique perpesctive on the end-user's needs & wants. An Eagle Scout, Ben Allen is a natural leader, two of the three years we mangaged within the retail industry.</p>
+    </div>
+    <div class="item"> <!--List of Strengths-->
+      <ul class="listOfThings">
+      <h4>Strengths:</h4>
+        <li>Communication</li>
+        <li>Leadership</li>
+        <li>Creativity</li>
+        <li>Adaptive</li>
+        <li>Head for Business</li>
+      </ul>
+  </div>
+  </div><!--middleContainer-->
+  <div class="lowerContainer">
+    <h4 class="item">Work History</h4>
+    <div class="workHistoryContainer item">
+      <div class="historyItem">
+        <h4>Lambda School</h4>
+        <p>Ben is currently enrolled in <a href="https://lambdaschool.com/">Lambda School</a> where is learning the skills to become a web developer.</p>
+      </div>
+      <div class="historyItem">
+        <h4>H-E-B Grocery Company</h4>
+        <p>Ben spent three year at <a href="https://www.heb.com/">H-E-B</a> as a manager of a perishable department. There he led from 4-7 people to acheive sales goals.</p>
+      </div>
+      <div class="historyItem">
+        Miltons Pet Apparel
+        <p>Ben created a successful pet apparel brand. He gained social media marketing experience through this as well as insight on end-user needs.</p>
+      </div>
+      <div class="historyItem">
+        Eagle Scout
+        <p>Ben went all the way from Cub Scout to Eagle Scout. Ben gained strong leadership & problem-solving skills.</p>
+        
+      </div>
+    </div>
+  </div><!--lowerContainer-->
 </body>
 </html>

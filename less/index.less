@@ -52,8 +52,147 @@ table {
 * {
     box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
+@universalWidth: 60vw;
+@universalHeight: 90vh;
+@center: 0 auto;
+@test: red;
+@paddingContainer: 1%;
+@middleContainerHeadText: 1.55rem;
+@middleContainerMargin: 2%;
+.widthWorkHistory {
+	width: 44%;
+	// height: 40vh;
+	// border: solid green 2px; //Testing reasons (visualize)
+	background: 3C2A0C;
 }
+.marginWorkHistory {
+	padding: 10%;
+	margin-top: 7%;
+}
+html {
+	// height: 100%;
+	background-color: #221609;
+	
+}
+body {
+	background-color: beige;
+	// height: @universalHeight;
+	width: 60%;
+	margin: @center;
+	@media (max-width: 500px) {
+		width: 500px;
+		
+	}
+}
+.navContainer {
+	// text-align: center;
+	display: flex;
+    justify-content: space-evenly;
+	a { //Anchors in Navigation Bar//
+		// padding: 3rem;
+		text-decoration: none;
+		color: black;
+	}
 
+}
+.upperContainer {
+	// height: @universalHeight;
+	width: @universalWidth;
+	margin: @center;
+	background-color: #4A2908;
+	// border: solid 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	img {
+		border-radius: 33%;
+		margin: 5% 0% 2% 2%;
+	}
+	.nameTag {
+		font-size: 3.1rem;
+		@media (max-width: 500px){
+			width: 500px;
+		}
+	}
+	button {
+		width: 12rem;
+		height: 2rem;
+		margin-top: 5%;
+		background-color: #715936;
+		border: none;
+	}
+	.item {
+		padding: @paddingContainer;
+	}
+	@media (max-width: 500px) {
+		width: 500px;
+		height: @universalHeight + vh;
+		display:flex;
+		flex-direction: column;
+	}
+	
+}
+.middleContainer{
+	width: @universalWidth;
+	background-color: #593A1A;
+	display: flex;
+	justify-content: space-between;
+	
+	.item {
+		min-width: 50%;
+		max-width: 50%;
+		// border: solid 2px;
+		padding: @paddingContainer;
+		
+		.itemOfItem {
+			padding: @paddingContainer;
+		}
+	}
+	p {
+		word-wrap: break-word;
+	}
+	h4 {
+	font-size: @middleContainerHeadText;
+	}
+	.listOfThings {
+		padding: @paddingContainer;
+		
+		li{
+			padding: @paddingContainer;
+		}
+	}
+	@media (max-width: 500px) {
+		width: 500px;
+		display:flex;
+		flex-direction: column;
+	}
+}
+.lowerContainer{
+	width: @universalWidth;
+	// height: @universalHeight;
+	// border: solid red;
+
+	.workHistoryContainer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		
+		.historyItem {
+			.widthWorkHistory();
+			// .marginWorkHistory();
+			@media (max-width: 500px) {
+				width: 500px;
+				// height: @universalHeight + vh;
+				display:flex;
+				flex-direction: column;
+				margin: .5rem;
+			}	
+			p {
+				word-wrap: break-word;
+			}
+		
+		
+	}
+	
+	}
+}

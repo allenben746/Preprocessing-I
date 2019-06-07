@@ -160,6 +160,13 @@ table {
 }
 .middleSection {
   padding: 2%;
+  display: flex;
+}
+.middleSection .middleSectionText {
+  width: 50%;
+}
+.middleSection .middleSectionList {
+  width: 50%;
 }
 html {
   width: 100%;

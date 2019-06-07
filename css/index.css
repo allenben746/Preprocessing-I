@@ -127,3 +127,21 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+.navigationBar {
+  display: flex;
+  justify-content: flex-end;
+}
+.navigationBar .navContainer {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.navigationBar .navContainer nav {
+  width: 100%;
+  color: purple;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigationBar .navContainer nav a {
+  text-decoration: none;
+}

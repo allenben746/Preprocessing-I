@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -144,6 +144,19 @@ table {
 }
 .navigationBar .navContainer nav a {
   text-decoration: none;
+}
+.profileBox {
+  background-color: grey;
+  padding: 2%;
+}
+.profileBox img {
+  width: 40%;
+  height: 40%;
+  padding: 2%;
+  border-radius: 100%;
+}
+.profileBox .item {
+  padding: 2%;
 }
 html {
   width: 100%;

@@ -145,3 +145,10 @@ table {
 .navigationBar .navContainer nav a {
   text-decoration: none;
 }
+html {
+  width: 100%;
+}
+body {
+  width: 95%;
+  margin: 0 auto;
+}
